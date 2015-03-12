@@ -8,7 +8,7 @@ Add more material to this file offline.
 ##USAGE
 source("./run_analysis.R")
 **After you setwd to the directory that contains the above file**.
-
+**Also see the unzipping instruction below.  It will prep your working directory for running run_analysis.R.**
 
 ##MORE DESCRIPTION
 This program produces the Tidy Data Set for the Coursera/JH Getting and Cleaning Data course project.
