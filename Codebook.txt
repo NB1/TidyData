@@ -1,0 +1,143 @@
+DESCRIPTION OF DATA
+
+The file finaldata.txt stores the average values of means and std
+deviations of several variables measured by the wearable devices worn
+by 30 human subjects while they performed six different physical
+activities. Every human subject performed every activity.  There are
+88 variables and 180 rows (30 humans times 6 activities).
+
+The file has a header row but no rownames.
+
+DESCRIPTION OF COLUMN NAMES
+
+The variables of interest in the original samsung data stored means
+and SDs of many observed parameters.  The names of the variables had
+some non-alphanumeric characters like "(" and ",".  Our data reports
+the average value of these variables.  To be consistent with the
+original data we have left the original names unchanged but prepended
+them with the letters AVG.  For example, the average of the original
+variable "tBodyAcc-mean()-X" is called "AVGtBodyAcc-mean()-X" in our
+analysis.  
+
+BETTER COLUMN NAMES
+
+The file TidierColumnNamesMapping.tsv provides a hand-generated 1-1
+mapping from the above names to even better names.  Users can easily
+replace the column headings in the finaldata.txt file from the
+existing ones to these tidier ones.
+
+For example, the tidier but unused version of variable
+"AVGtBodyAcc-mean()-X" is AVGtBodyAccMeanX.
+
+DESCRIPTION OF VARIABLES
+
+Here are the variables with their descriptions:
+activity: Physical activity e.g. WALKING 
+subject: A number in range [1, 30] indicating unique subject id.
+AVGtBodyAcc-mean()-X: Mean value of variable tBodyAcc-mean()-X.
+AVGtBodyAcc-mean()-Y: Mean value of variable tBodyAcc-mean()-Y.
+AVGtBodyAcc-mean()-Z: Mean value of variable tBodyAcc-mean()-Z.
+AVGtGravityAcc-mean()-X: Mean value of variable tGravityAcc-mean()-X.
+AVGtGravityAcc-mean()-Y: Mean value of variable tGravityAcc-mean()-Y.
+AVGtGravityAcc-mean()-Z: Mean value of variable tGravityAcc-mean()-Z.
+AVGtBodyAccJerk-mean()-X: Mean value of variable tBodyAccJerk-mean()-X.
+AVGtBodyAccJerk-mean()-Y: Mean value of variable tBodyAccJerk-mean()-Y.
+AVGtBodyAccJerk-mean()-Z: Mean value of variable tBodyAccJerk-mean()-Z.
+AVGtBodyGyro-mean()-X: Mean value of variable tBodyGyro-mean()-X.
+AVGtBodyGyro-mean()-Y: Mean value of variable tBodyGyro-mean()-Y.
+AVGtBodyGyro-mean()-Z: Mean value of variable tBodyGyro-mean()-Z.
+AVGtBodyGyroJerk-mean()-X: Mean value of variable tBodyGyroJerk-mean()-X.
+AVGtBodyGyroJerk-mean()-Y: Mean value of variable tBodyGyroJerk-mean()-Y.
+AVGtBodyGyroJerk-mean()-Z: Mean value of variable tBodyGyroJerk-mean()-Z.
+AVGtBodyAccMag-mean(): Mean value of variable tBodyAccMag-mean().
+AVGtGravityAccMag-mean(): Mean value of variable tGravityAccMag-mean().
+AVGtBodyAccJerkMag-mean(): Mean value of variable tBodyAccJerkMag-mean().
+AVGtBodyGyroMag-mean(): Mean value of variable tBodyGyroMag-mean().
+AVGtBodyGyroJerkMag-mean(): Mean value of variable tBodyGyroJerkMag-mean().
+AVGfBodyAcc-mean()-X: Mean value of variable fBodyAcc-mean()-X.
+AVGfBodyAcc-mean()-Y: Mean value of variable fBodyAcc-mean()-Y.
+AVGfBodyAcc-mean()-Z: Mean value of variable fBodyAcc-mean()-Z.
+AVGfBodyAcc-meanFreq()-X: Mean value of variable fBodyAcc-meanFreq()-X.
+AVGfBodyAcc-meanFreq()-Y: Mean value of variable fBodyAcc-meanFreq()-Y.
+AVGfBodyAcc-meanFreq()-Z: Mean value of variable fBodyAcc-meanFreq()-Z.
+AVGfBodyAccJerk-mean()-X: Mean value of variable fBodyAccJerk-mean()-X.
+AVGfBodyAccJerk-mean()-Y: Mean value of variable fBodyAccJerk-mean()-Y.
+AVGfBodyAccJerk-mean()-Z: Mean value of variable fBodyAccJerk-mean()-Z.
+AVGfBodyAccJerk-meanFreq()-X: Mean value of variable fBodyAccJerk-meanFreq()-X.
+AVGfBodyAccJerk-meanFreq()-Y: Mean value of variable fBodyAccJerk-meanFreq()-Y.
+AVGfBodyAccJerk-meanFreq()-Z: Mean value of variable fBodyAccJerk-meanFreq()-Z.
+AVGfBodyGyro-mean()-X: Mean value of variable fBodyGyro-mean()-X.
+AVGfBodyGyro-mean()-Y: Mean value of variable fBodyGyro-mean()-Y.
+AVGfBodyGyro-mean()-Z: Mean value of variable fBodyGyro-mean()-Z.
+AVGfBodyGyro-meanFreq()-X: Mean value of variable fBodyGyro-meanFreq()-X.
+AVGfBodyGyro-meanFreq()-Y: Mean value of variable fBodyGyro-meanFreq()-Y.
+AVGfBodyGyro-meanFreq()-Z: Mean value of variable fBodyGyro-meanFreq()-Z.
+AVGfBodyAccMag-mean(): Mean value of variable fBodyAccMag-mean().
+AVGfBodyAccMag-meanFreq(): Mean value of variable fBodyAccMag-meanFreq().
+AVGfBodyBodyAccJerkMag-mean(): Mean value of variable fBodyBodyAccJerkMag-mean().
+AVGfBodyBodyAccJerkMag-meanFreq(): Mean value of variable fBodyBodyAccJerkMag-meanFreq().
+AVGfBodyBodyGyroMag-mean(): Mean value of variable fBodyBodyGyroMag-mean().
+AVGfBodyBodyGyroMag-meanFreq(): Mean value of variable fBodyBodyGyroMag-meanFreq().
+AVGfBodyBodyGyroJerkMag-mean(): Mean value of variable fBodyBodyGyroJerkMag-mean().
+AVGfBodyBodyGyroJerkMag-meanFreq(): Mean value of variable fBodyBodyGyroJerkMag-meanFreq().
+"AVGangle(tBodyAccMean,gravity)": Mean value of variable Gangle(tBodyAccMean,gravity)".
+"AVGangle(tBodyAccJerkMean),gravityMean)": Mean value of variable Gangle(tBodyAccJerkMean),gravityMean)".
+"AVGangle(tBodyGyroMean,gravityMean)": Mean value of variable Gangle(tBodyGyroMean,gravityMean)".
+"AVGangle(tBodyGyroJerkMean,gravityMean)": Mean value of variable Gangle(tBodyGyroJerkMean,gravityMean)".
+"AVGangle(X,gravityMean)": Mean value of variable Gangle(X,gravityMean)".
+"AVGangle(Y,gravityMean)": Mean value of variable Gangle(Y,gravityMean)".
+"AVGangle(Z,gravityMean)": Mean value of variable Gangle(Z,gravityMean)".
+AVGtBodyAcc-std()-X: Mean value of variable tBodyAcc-std()-X.
+AVGtBodyAcc-std()-Y: Mean value of variable tBodyAcc-std()-Y.
+AVGtBodyAcc-std()-Z: Mean value of variable tBodyAcc-std()-Z.
+AVGtGravityAcc-std()-X: Mean value of variable tGravityAcc-std()-X.
+AVGtGravityAcc-std()-Y: Mean value of variable tGravityAcc-std()-Y.
+AVGtGravityAcc-std()-Z: Mean value of variable tGravityAcc-std()-Z.
+AVGtBodyAccJerk-std()-X: Mean value of variable tBodyAccJerk-std()-X.
+AVGtBodyAccJerk-std()-Y: Mean value of variable tBodyAccJerk-std()-Y.
+AVGtBodyAccJerk-std()-Z: Mean value of variable tBodyAccJerk-std()-Z.
+AVGtBodyGyro-std()-X: Mean value of variable tBodyGyro-std()-X.
+AVGtBodyGyro-std()-Y: Mean value of variable tBodyGyro-std()-Y.
+AVGtBodyGyro-std()-Z: Mean value of variable tBodyGyro-std()-Z.
+AVGtBodyGyroJerk-std()-X: Mean value of variable tBodyGyroJerk-std()-X.
+AVGtBodyGyroJerk-std()-Y: Mean value of variable tBodyGyroJerk-std()-Y.
+AVGtBodyGyroJerk-std()-Z: Mean value of variable tBodyGyroJerk-std()-Z.
+AVGtBodyAccMag-std(): Mean value of variable tBodyAccMag-std().
+AVGtGravityAccMag-std(): Mean value of variable tGravityAccMag-std().
+AVGtBodyAccJerkMag-std(): Mean value of variable tBodyAccJerkMag-std().
+AVGtBodyGyroMag-std(): Mean value of variable tBodyGyroMag-std().
+AVGtBodyGyroJerkMag-std(): Mean value of variable tBodyGyroJerkMag-std().
+AVGfBodyAcc-std()-X: Mean value of variable fBodyAcc-std()-X.
+AVGfBodyAcc-std()-Y: Mean value of variable fBodyAcc-std()-Y.
+AVGfBodyAcc-std()-Z: Mean value of variable fBodyAcc-std()-Z.
+AVGfBodyAccJerk-std()-X: Mean value of variable fBodyAccJerk-std()-X.
+AVGfBodyAccJerk-std()-Y: Mean value of variable fBodyAccJerk-std()-Y.
+AVGfBodyAccJerk-std()-Z: Mean value of variable fBodyAccJerk-std()-Z.
+AVGfBodyGyro-std()-X: Mean value of variable fBodyGyro-std()-X.
+AVGfBodyGyro-std()-Y: Mean value of variable fBodyGyro-std()-Y.
+AVGfBodyGyro-std()-Z: Mean value of variable fBodyGyro-std()-Z.
+AVGfBodyAccMag-std(): Mean value of variable fBodyAccMag-std().
+AVGfBodyBodyAccJerkMag-std(): Mean value of variable fBodyBodyAccJerkMag-std().
+AVGfBodyBodyGyroMag-std(): Mean value of variable fBodyBodyGyroMag-std().
+AVGfBodyBodyGyroJerkMag-std(): Mean value of variable fBodyBodyGyroJerkMag-std().
+
+
+
+DESCRIPTION OF FILES
+
+tidyproject.zip:  All that is needed to run run_analysis.R is in this file.  Also read README and codebook.txt.
+Codebook.txt:  This codebook describing all data and files.
+README: Instructions on how to execute the script.
+TidierColumnNamesMapping.tsv:  Suggested but unused column names.  Names in finaldata.txt can be replaced by these names.
+X_test.txt: Original test data (input to the script)
+X_train.txt: Similar to the previous.
+activity_labels.txt: English names and ids of the activities.
+features.txt: Original column names.  Very messy.
+features_info.txt:  Descriptions of the features.
+finaldata.txt:  Output of the script.  (tidy data).  Each run of teh script will overwrite this file.
+finaldata.txt.TRUECOPY:  True and preservable copy of the above data.
+run_analysis.R:  THE SCRIPT TO PRODUCE TIDYDATA.
+subject_test.txt:  Subjects to be attached with the data in X_test.
+subject_train.txt:  Subjects to be attached with the data in X_rain.
+y_test.txt: Y values for the test data.
+y_train.txt: Y values for the training data.
